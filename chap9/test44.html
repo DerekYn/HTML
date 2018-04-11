@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>테이블 열그룹 만들기</title>
+</head>
+<body>
+<h1 align="center">제품 목록 및 가격표</h1>
+<table border="8">
+<colgroup span="1" bgcolor="gold"></colgroup>
+<!-- 
+     colgroup 또는 줄여서 col 이라고 사용할 수 있음. 
+     span="숫자" 이때 숫자는 묶어줄 열의 갯수를 말한다.
+	 span에 처음으로 숫자를 주었는데 그 숫자가 1 이므로 첫번재 열을 그룹으로 묶겠다는 뜻이고
+-->
+
+<colgroup span="2" bgcolor="greenyellow"></colgroup>
+<!--
+	 span에 두번째 숫자를 주었는데 그 값이 2를 주었는데 이 뜻은 묶어줄 열의 갯수를 2개로 한다는 말이므로, 두번째열과 세번째 열 2개를 그룹으로 묶겠다는 뜻이다.
+-->
+<tr>
+	<th>제품 이름과 설명</th>
+	<th>개당 가격</th>
+	<th>박스당 개수</th>
+</tr>
+<tr>
+	<td>블라우스 - 붉은색 실크</td>
+	<td>20,000원</td>
+	<td>150</td>
+</tr>
+<tr>
+	<td>팬티 - 검은색 면</td>
+	<td>4,500원</td>
+	<td>300</td>
+</tr>
+</table>
+
+</body>
+</html>
