@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼(파일 업로드)만들기</title>
+</head>
+<body>
+
+<p><b>우리 회사에서 일할 생각이 있으십니까? 다음 양식의 항목들을 기입해 주십시오:</b></p>
+
+<form name="myfrm" method="post" action="resume.jsp" enctype="multipart/form-data"> 
+								   <!-- enctype="multipart/form-data" 은 파일 업로드 컨트롤을 제공하는 경우에 사용함. -->
+<br><input type="radio" name="sex" value="male" checked>남자
+<br><input type="radio" name="sex" value="female">여자
+<p>성: &nbsp;&nbsp;&nbsp;<input type="text" name="name1" size="25">
+<br>이름: <input type="text" name="name2" size="25"></p>
+
+<br>파일 찾기:<input type="file" name="resume" size="90">
+
+<p>
+<input type="submit" value="전송"> <!-- 입력된 내용을 서버측으로 보냄 -->
+<input type="reset"  value="취소"> <!-- 입력된 내용을 공백으로 만듬 -->
+<input type="button" name="btn" value="확인"><!-- 일반 명령 버튼, 주로 자바스크립트 프로그램을 호출하는데 사용한다. -->
+</p>
+</form>
+
+</body>
+</html>
