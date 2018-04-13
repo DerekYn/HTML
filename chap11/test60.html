@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼(개인 정보 입력 화면)</title>
+</head>
+<body>
+
+<h2>개인 정보 입력</h2>
+	<form name="myfrm" action="register.jsp" method="post">
+	  이름: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br>
+	  아이디: &nbsp;&nbsp;&nbsp;<input type="text" name="id"><br>
+	  패스워드: <input type="password" name="password"><br><br>
+	  성별:
+	      남<input type="radio" name="gender" value="malle" checked>
+		 여<input type="radio" name="gender" value="femalle"><br><br>
+       메일수신여부:
+	      공지메일<input type="checkbox" name="inotice" checked>
+		 광고메일<input type="checkbox" name="cnotice">
+		 배송확인메일<input type="checkbox" name="dnotice"><br><br>
+	  직업:
+	   <select name="job">
+	        <option>회사원</option>
+			<option>학생</option>
+			<option>기타</option>
+	   </select><br><br>
+	  좋아하는과일:
+	   <select name="fruit" size="4" multiple>
+	        <option>사과</option>
+			<option>수박</option>
+			<option>포도</option>
+			<option>복숭아</option>
+			<option>오렌지</option>
+			<option>딸기</option>
+			<option>배</option>
+			<option>감</option>
+			<option>참외</option>
+	   </select><br><br>
+	   
+	   <input type="submit" value="전송"> <!-- 입력된 내용을 서버측으로 보냄 -->
+	   <input type="reset"  value="취소"> <!-- 입력된 내용을 공백으로 만듬 -->
+	   <input type="button" name="btn" value="확인"><!-- 일반 명령 버튼, 주로 자바스크립트 프로그램을 호출하는데 사용한다. -->
+	</form>
+
+</body>
+</html>
