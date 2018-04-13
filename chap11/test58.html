@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼(textarea)만들기</title>
+</head>
+<body>
+
+<h1 align="center">고객 설문 조사</h1>
+<p>잠시만 시간을 내어 우리의 웹 사이트를 평가해 주십시오:</p>
+
+<form name="myfrm" method="post" action="survey.jsp">
+<input type="radio" name="rating" value="excellent" checked>아주 좋다<br>
+<input type="radio" name="rating" value="verygood">좋다<br>
+<input type="radio" name="rating" value="good">보통이다<br>
+<input type="radio" name="rating" value="poor">나쁘다
+
+<p>제안이나 하고 싶은 말:
+<br>
+<textarea name="commentbox" rows="6" cols="65"></textarea>
+<!-- rows="6" cols="65" 은 처음보여줄 textarea의 크기이지 전체용량은 아니다.
+     6행이상 계속해서 더 많은 행을 넣을 수 있다. 
+     6행이 넘어가면 수직스크롤바가 자동적으로 생성되어진다.
+-->
+
+<p>
+<input type="submit" value="전송"> <!-- 입력된 내용을 서버측으로 보냄 -->
+<input type="reset"  value="취소"> <!-- 입력된 내용을 공백으로 만듬 -->
+<input type="button" name="btn" value="확인"><!-- 일반 명령 버튼, 주로 자바스크립트 프로그램을 호출하는데 사용한다. -->
+</p>
+</form>
+
+</body>
+</html>
