@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폰트꾸미기(CSS)</title>
+
+<style type="text/css">
+ #fontId1 {font-family:궁서체,굴림; color:#00FF50; font-style:italic}
+								/* 텍스트에 컬러를 부여할 때는 color 효과를 사용한다. 
+								   font-style:italic; 와 font-style:oblique 는 동일하게 기울임꼴을 나타낸다.
+								 */
+ #fontId2 {font-family:굴림,궁서체; color:#FF0000; font-style:normal; background-color:yellow}
+
+ #fontId3 {font-family:휴먼옛체,궁서체; color:#0000FF; font-weight:900; text-indent:20px}
+
+ #fontId4 {font-family:맑은 고딕,바탕체; color:orange; font-weight:bold; font-size:20pt}
+ 
+ #fontId5 {font-size:xx-small}
+ 
+ #fontId6 {font-size:x-small}
+   
+ #fontId7 {font-size:small}
+ 
+ #fontId8 {font-size:medium}
+ 
+ #fontId9 {font-size:large}
+ 
+ #fontId10 {font-size:x-large;}
+ 
+ #fontId11 {font-size:xx-large;}
+ 
+ 
+</style>
+<!-- 
+
+1) font-family
+- 일반적인 방법으로는 웹페이지에는 글꼴을 포함할 수 없다. 그렇기 때문에 웹페이지에 지정된 글꼴을 사용자가 보기 위해서는 사용자의 디바이스에도 해당 글꼴이 포함되어 있어야 한다. 그래서 CSS에서는 font family라는 개념이 있는데, 글꼴의 우선순위를 정해서 여러개 지정하면 그 중에서 사용할 수 있는 폰트를 반영하게 된다. 예를들어 아래의 구문은 사용자 컴퓨터에 궁서체 글꼴이 있다면 적용하고 없다면 굴림 글꼴을 적용한다. 
+
+2) font-style
+- 기울임꼴 여부
+
+3) font-weight
+- 100 이 가장 가는 글씨이고 900 이 가장 굵은 글씨이다. 
+  보통은 400 이고, 일반적으로 굵은 글씨는 700 이다.
+  HTML의 <b> 처럼 쓰고자 할때 스타일 시트에서는 font-weight 로 만들어준다.
+  참고로, lighter는 100,  normal은 400, bold는 700, bolder는 900 에 해당한다.
+  대부분의 글꼴은 normal과 bold 두가지의 굵기를 갖고 있기 때문에 여러 값을 지정해도 두가지의 굵기로만 나온다. 
+  그래서 굵기를 정할 때는 normal, bold 두가지를 주로 사용한다.
+
+4) text-indent 
+- text-indent: 20px   양수값을 주면 텍스트에서 첫줄만 들여쓰기가 된다.
+  text-indent: -10px  음수값을 주면 텍스트에서 첫줄만 내어쓰기가 된다.
+
+5) font-size
+- 글자크기
+-->
+
+</head>
+<body>
+
+<h1>베토벤</h1>
+<p id="fontId1">루드비히 반 베토벤(ludwig van beethoven)은 1770년 독일의 본에서 태어난 위대한 작곡가이다. 
+그는 대부분의 삶을 비엔나에서 보냈다. 그 곳에서 콘서트를 열고, 피아노를 가르치고, 작곡한 곡을 팔아 생계를 이었다.</p>
+<p id="fontId2">
+베토벤의 인생에서 가장 신비한 요소를 든다면 그가 성인이 되었을 때부터 줄곧 귀머거리였다는 것이다. 
+사실 그의 가장 훌륭한 작품들 중 대부분은 그가 청력을 잃고 난 후에 작곡되었다.</p>
+
+<h1>바하</h1>
+<p id="fontId3">조안 세바스찬 바하는 1685년 독일의 eisenach에 있는 음악가 집안에서 태어났다. 
+바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. </p>
+<p id="fontId4">그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 
+그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</p>
+
+<p id=fontId5> font-size:xx-small </p>
+<p id=fontId6> font-size:x-small </p>
+<p id=fontId7> font-size:small   </p>
+<p id=fontId8> font-size:medium  </p>
+<p id=fontId9> font-size:large    </p>
+<p id=fontId10> font-size:x-large  </p>
+<p id=fontId11> font-size:xx-large </p>
+
+</body>
+</html>
