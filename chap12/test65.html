@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 꾸미기(CSS)</title>
+
+<!-- 
+
+1) span 태그
+텍스트는 태그가 아니라 컨텐트이기 때문에 텍스트를 꾸며주기 위해서는 텍스트를 감싸는 태그가 필요하다. 
+줄바꿈 없이 일부 텍스트를 꾸며주기 위해서는 꾸미려는 텍스트를 <span> 태그로 감싸고 여기에 효과를 준다. 
+
+2) 색
+텍스트에 컬러를 부여할 때는 color 효과를 사용한다. 
+
+CSS에서는 색상을 지정하는 3가지 방법이 있는데 아래와 같다. 
+--------------------------------------------------------------------------------
+Hex 	16진수로 색상 값을 표현, 
+        #ff0000 (붉은색), #00ff00(초록), #0000ff(파랑)
+--------------------------------------------------------------------------------
+RGB 	붉은색,       초록,         파랑의 값을 조합해서 색상 값을 표현,  
+        RGB(255,0,0), RGB(0,255,0), RGB(0,0,255)
+--------------------------------------------------------------------------------
+별명 	red, blue, green등 칼러코드 참고
+--------------------------------------------------------------------------------
+
+
+3) 정렬 
+텍스트를 정렬하기 위해서는 정렬하고자 하는 텍스트를 태그로 감싸고 
+이 태그에 text-align 효과를 지정한다. CSS에서는 4가지 형태의 정렬방식을 지원한다.
+
+--------------------------------------------------------------------------------
+left 	왼쪽 정렬
+--------------------------------------------------------------------------------
+right 	오른쪽 정렬
+--------------------------------------------------------------------------------
+center 	가운데 정렬
+--------------------------------------------------------------------------------
+justify 	양쪽 정렬, 텍스트 간의 간격을 조정해서 행의 간격을 일치시킴
+--------------------------------------------------------------------------------
+
+
+4) 텍스트 장식
+⊙ text-decoration => 태그를 사용하여 아래의 값을 주면 
+   - text-decoration:overline; 	     윗줄 
+   - text-decoration:line-through; 	취소선 
+   - text-decoration:underline; 	밑줄
+
+⊙ line-height     => 행간격을 지정한다.
+   - line-height:normal;
+   - line-height:4;
+   - line-height:10px;
+   - line-height:100%;
+   - line-height:300%;  ==> 300% 은 글자크기의 3배로 줄간격을 하겠다는 말이다. 
+   - line-height:initial;
+
+⊙ letter-spacing  => 문자와 문자사이의 간격을 지정한다.
+   - letter-spacing:normal;
+   - letter-spacing:10px;
+   - letter-spacing:1cm;
+   - letter-spacing:initial;
+
+⊙ vertical-align  => 텍스트의 수직 정렬을 지정한다.
+   - vertical-align:baseline;
+   - vertical-align:sub;
+   - vertical-align:super;
+   - vertical-align:initial;
+
+⊙ white-space => 줄바꿈되는 방식을 지정한다.
+   - white-space:normal;
+   - white-space:nowrap;
+   - white-space:pre;
+   - white-space:initial;
+
+-->
+<style type="text/css">
+	div {margin:30px; width:800px;}
+	#left {text-align:left;}
+	#right {text-align:right;}
+	#justify {text-align:justify;}
+	#center {text-align:center;}
+</style>
+
+</head>
+<body>
+
+<h1>베토벤</h1>
+<p>루드비히 반 베토벤<span style="color:red; font-weight:900">(ludwig van beethoven)</span>은 1770년 독일의 본에서 태어난 위대한 작곡가이다. 그는 대부분의 삶을 비엔나에서 보냈다. 
+그 곳에서 <span style="color:rgb(255,0,0); font-weight:900">콘서트</span>를 열고, 피아노를 가르치고, 작곡한 곡을 팔아 <span style="color:#ff0000; font-weight:900">생계</span>를 이었다.
+<br>베토벤의 인생에서 가장 신비한 요소를 든다면 그가 성인이 되었을 때부터 줄곧 귀머거리였다는 것이다. 사실 그의 가장 훌륭한 작품들 중 대부분은 그가 청력을 잃고 난 후에 작곡되었다.</p>
+
+<a href="http://www.somacon.com/p142.php">칼러코드</a>
+
+<h1>바하</h1>
+<p><div id="left">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다.</div></p>
+
+<p><div id="right">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다.</div></p>
+
+<p><div id="center">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다.</div></p>
+
+<p><div id="justify">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다.</div></p>
+
+<p><div id="left">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다. 바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. 그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</div></p>
+
+<p><div id="right">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다. 바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. 그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</div></p>
+
+<p><div id="center">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다. 바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. 그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</div></p>
+
+<p><div id="justify">
+조안 세바스찬 바하는 1685년 독일의 Eisenach에 있는 음악가 집안에서 태어났다. 바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. 그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</div></p>
+
+<p>
+<h1>베토벤</h1>
+<p>루드비히 반 베토벤(ludwig van beethoven)은 1770년 <span style="text-decoration:line-through">독일의 본</span>에서 태어난 위대한 작곡가이다.  
+<span style="letter-spacing:30px">그는 대부분의 삶을 비엔나에서 보냈다.</span> 그 곳에서 콘서트를 열고, 피아노를 가르치고, 작곡한 곡을 팔아 생계를 이었다.
+<span style="line-height:70px">베토벤의 인생에서 가장 신비한 요소를 든다면 그가 성인이 되었을 때부터 줄곧 귀머거리였다는 것이다. 
+사실 그의 가장 훌륭한 작품들 중 대부분은 그가 청력을 잃고 난 후에 작곡되었다.</span></p>
+
+<p>
+<br><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_line-height">line-height 참고</a>
+<br><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_letter-spacing">letter-spacing 참고</a>
+<br><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_vertical-align&preval=baseline">vertical-align 참고</a>
+<br><a href="http://www.w3schools.com/cssref/playit.asp?filename=playcss_white-space">white-space 참고</a>
+
+
+</body>
+</html>
