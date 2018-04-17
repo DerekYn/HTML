@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배경이미지 꾸미기</title>
+
+<style type="text/css">
+
+ #bgtextcolor{background-color:#FFFF00;}
+
+ #logo1{background-image:url('images/clouds.jpg'); 
+        width:600px; height:600px;}
+ 
+ #logo2{background-image:url('images/clouds.jpg'); 
+        width:396px; height:144px;}
+ 
+ #logo3{background-image:url('images/clouds.jpg'); 
+        background-repeat:repeat-x; 
+        width:1000px; height:1000px;}
+ 
+ #logo4{background-image:url('images/clouds.jpg'); 
+        background-repeat:repeat-y; 
+        width:1000px; height:1000px;}
+ 
+ #logo5{background-image:url('images/clouds.jpg'); 
+        background-repeat:repeat; 
+        width:1000px; height:1000px;}
+ 
+ #logo6{background-image:url('images/clouds.jpg'); 
+        background-repeat:no-repeat; 
+        background-position:right center;
+		width:700px; height:500px; border:1px solid red;}
+		
+ #logo7{background-image:url('images/clouds.jpg');
+        background-repeat:no-repeat;
+		background-position:50% 50%;
+		width:700px; height:500px;
+		border:1px solid blue;}
+		
+ #logo8{background-image:url('images/clouds.jpg');
+        background-repeat:no-repeat;
+		background-position:100% 0%;
+		width:700px; height:500px;
+		border:1px solid green;}
+		
+ #logo9{background-image:url('images/clouds.jpg');
+        background-repeat:no-repeat;
+		background-position:50px 100px;
+		width:700px; height:500px;
+		border:1px solid yellow;}
+</style>
+<!--
+  1) 배경색 => background-color:색상값
+  
+  2) 배경 이미지 => background-image: url('이미지의 URL');
+  
+  3) 배경 이미지의 반복 => background-repeat: 반복방식
+     background-repeat:repeat 	  수직, 수평 모두 반복함
+     background-repeat:repeat-x   수평만 반복함
+     background-repeat:repeat-y   수직만 반복함
+     background-repeat:no-repeat  반복하지 않음
+
+  4) 배경 이미지의 위치 => background-position: 위치값
+     background-position:left top
+	 background-position:left center
+	 background-position:left bottom
+	 background-position:right top
+	 background-position:right center
+	 background-position:right bottom
+	 background-position:center top
+	 background-position:center center
+	 background-position:center bottom
+	 background-position:x% y% 
+	 => x%는 수평위치를 y%는 수직 위치를 의미하고, 이미지의 상대적인 위치를 지정한다.
+	 background-position:xpos ypos 	이미지의 절대적인 위치를 지정한다.
+-->
+
+</head>
+<body>
+
+엘리먼트의 배경
+<p><div id="bgtextcolor">
+엘리먼트의 배경에 색상을 부여하거나 이미지를 표시하고 싶을 때 background 효과를 사용한다. 이 효과를 이용하면 배경에 사용된 이미지의 위치를 지정하거나, 반복 할 수 있다. 
+</div></p>
+
+<div id="logo1">
+<p><h2>베토벤</h2></p>
+<p>루드비히 반 베토벤(ludwig van beethoven)은 1770년 독일의 본에서 태어난 위대한 작곡가이다. 그는 대부분의 삶을 비엔나에서 보냈다. 그 곳에서 콘서트를 열고, 피아노를 가르치고, 작곡한 곡을 팔아 생계를 이었다.
+<br>베토벤의 인생에서 가장 신비한 요소를 든다면 그가 성인이 되었을 때부터 줄곧 귀머거리였다는 것이다. 사실 그의 가장 훌륭한 작품들 중 대부분은 그가 청력을 잃고 난 후에 작곡되었다.</p>
+
+<h2>바하</h2>
+<p>조안 세바스찬 바하는 1685년 독일의 eisenach에 있는 음악가 집안에서 태어났다. 바하의 작품에는 교회용 오르간과 합창곡, 챔버 오케스트라용 음악을 비롯해서 200개가 넘는 칸타타 등이 있다. 그는 일생동안 작곡가보다는 오르간 연주자로 불리기를 원했지만, 그의 곡들은 후대의 수많은 작곡자들에게 큰 영향을 끼쳤으며, 그의 영향을 받은 작곡가로는 베토벤, 모짜르트 등이 있다.</p>
+</div>
+
+<p><div id="logo2"></div></p>
+<p><div id="logo3"></div></p>
+<p><div id="logo4"></div></p>
+<p><div id="logo5"></div></p>
+<p><div id="logo6"></div></p>
+<p><div id="logo7"></div></p>
+<p><div id="logo8"></div></p>
+<p><div id="logo9"></div></p>
+
+</body>
+</html>
