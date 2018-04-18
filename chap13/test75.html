@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마진겹침(부모/자식 엘리먼트 간)</title>
+</head>
+<body>
+
+<p style="font-size:20pt; font-weight:600; text-align:center;">
+	마진이 세로 방향으로 겹쳤을 때 마진 값이 더 큰 쪽을 따르게 되는 현상
+<br><span style="color:blue; background-color:yellow;">
+    부모/자식 엘리먼트 간에 있어서 부모 엘리먼트에 border 나 text 같은 시각적인 요소가 없을 경우 마진겹침 현상이 일어난다.
+   </span>
+</p>
+    
+<div style="margin-top:100px;"> 
+	<!-- 부모는 border 나 text 같은 시각적인 요소가 없는 것이 중요한것이다. -->
+    <div style="margin-top:50px; background-color:green">
+         부모/자식 엘리먼트간 마진겹침(마진 값이 더 큰 쪽인 100px)
+    </div>
+</div>
+
+<div style="margin-top:100px; border:1px solid red;"> 
+	<!-- 부모는 border 나 text 같은 시각적인 요소가 있으면 마진겹침 현상은 발생하지 않는다. -->
+    <div style="margin-top:50px; background-color:green">
+         부모/자식 엘리먼트간 마진겹침 없음(150px)
+    </div>
+</div>
+
+<div style="margin-top:0px;"> 
+	<!-- 부모는 border 나 text 같은 시각적인 요소가 없는 것이 중요한것이다. -->
+    <div style="margin-top:50px; background-color:green">
+         부모/자식 엘리먼트간 마진겹침(마진 값이 더 큰 쪽인 50px)
+    </div>
+</div>
+
+</body>
+</html>
