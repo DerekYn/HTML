@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스모델의 종류</title>
+<style text="text/css">
+	a#blocka {display:block;}
+	li#inlineli {display:inline;}
+</style>
+</head>
+<body>
+
+<p> 
+<span style="font-size:20pt; font-weight:600; text-align:center;">
+	박스모델의 종류
+</span><br>
+
+<div style="color:blue; background-color:yellow; width:800px; height:250px; margin:50px; padding:20px">
+	<ul>
+		<li>블록 레벨 엘리먼트(block-level element)</li>
+			<ul>
+				<li>한줄에 하나의 엘리먼트만 표시되는 종류의 엘리먼트</li>
+				<li>다른 인라인 엘리먼트 뿐 아니라 블록 레벨 엘리먼트도 컨텐츠로 포함할 수 있다.</li>
+				<li>DIV, H1~H6, P, FORM, UL, LI, ADDRESS, BLOCKQUOTE, TABLE, HR 등</li>
+			</ul>
+	 
+		<li>인라인 엘리먼트(inline element)</li>
+			<ul>
+				<li>한줄에 여러개의 엘리먼트가 표시되는 종류의 엘리먼트 (예제2)</li>
+				<li>인라인 엘리먼트만 포함 할 수 있고, 블록레벨 엘리먼트의 자식이어야 한다.</li>
+				<li>a, img, strong 등</li>
+			</ul>
+		 
+		<li>display 속성을 이용해서 블록레벨 엘리먼트를 인라인 엘리먼트로 바꿀 수 있고, 반대경우도 가능하다.</li>
+		 
+		<li>display 속성의 값을 none으로 하면 엘리먼트를 화면에서 보이지 않게 할 수 있다.</li>
+	</ul>
+</div>
+</p>
+    
+<div style="margin:20px 200px 20px 200px; width:400px; height:200px; text-align:center; border:1px solid blue; padding:10px;">
+	<span style="font-size:14pt; font-weight:500;">블록 레벨 엘리먼트(block-level element)</span>
+		<ul type="square">
+				<li>div</li>
+				<li>p</li>
+				<li id="inlineli">ul</li>
+				<li id="inlineli">h1</li>
+				<li>form</li>
+		</ul>
+</div>
+
+<div style="margin:20px 150px 20px 150px; width:500px; height:100px; text-align:center;  border:1px solid blue; padding:10px;">
+	<span style="font-size:14pt; font-weight:500;">인라인 엘리먼트(inline element)</span>
+<p>
+	<a href="http://www.naver.com">네이버</a>
+    <a id="blocka" href="http://www.daum.net">다음</a>
+    <a href="http://www.nateon.com">네이트온</a>
+	<a href="http://www.kbs.co.kr" style="display:none">kbs</a>
+	<a href="http://www.imbc.com">mbc</a>
+	<a href="http://www.sbs.co.kr" style="visibility:hidden">sbs</a>
+	<a href="http://www.google.co.kr">구글</a>
+	<a href="http://www.naver.com">네이버</a>
+    <a href="http://www.daum.net" style="border:2px solid red; margin:30px; padding:50px; width:100%; height:100%">다음</a>
+	<!-- 인라인 엘리먼트는 margin 이나 padding 값을 주면 그 값만큼 좌,우로는 밀어버리지만 위,아래로는 밀어버리지 못하고 위에 걸쳐 버린다. 
+		아래의 test 입니다를 해보면 알 수 있다. 
+		또한 인라인 엘리먼트는 width 와 height 값을 주어서 변경할 수 없다. 
+		만약 인라인 엘리먼트의 컨텐츠가 이미지이라면 원래 이미지 크기로만 사용할 수 있는 것이다 -->
+    <a href="http://www.nateon.com">네이트온</a>
+</div>
+    
+<div style="width:100%; border:1px solid green;">test 입니다.</div>
+
+</body>
+</html>
