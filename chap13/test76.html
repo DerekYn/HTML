@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마진겹침(자기 자신의 마진 겹침)</title>
+</head>
+<body>
+
+<p style="font-size:20pt; font-weight:600; text-align:center;">
+	마진이 세로 방향으로 겹쳤을 때 마진 값이 더 큰 쪽을 따르게 되는 현상
+<br><span style="color:blue; background-color:yellow;">
+     자기 자신의 마진 겹침, 엘리먼트가 컨텐츠로 시각적인 요소를 가지고 있지 않을 때 그 엘리먼트는 상하 마진 중 더 큰 값이 적용된다.
+    </span>
+</p>
+    
+<div style="margin-top:150px; margin-bottom:50px;"></div>
+<div style="margin-top:30px; text-align:center">
+      마진겹침
+</div>
+
+<div style="margin-top:150px; margin-bottom:50px; text-align:center">
+	시각적 효과 발생하면 마진겹침이 없어짐
+</div>
+<div style="margin-top:30px; text-align:center">
+     마진겹침
+</div>
+
+</body>
+</html>
