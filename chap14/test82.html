@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 사용하여 레이아웃 구성하기</title>
+
+<style type="text/css">
+    body {font-size:12px; margin:10px 20px 10px 20px; }
+    ul   {padding-left:10px;}
+    li   {list-style:none;}
+    .wraper {width:800px;}
+    .navigation {float:left; width:200px; background-color:red; color:white;}
+    .content {float:right;   width:580px; background-color:green; color:white; padding:10px}
+    .footer {clear:both; background-color:purple;  color:white;}
+	/* clear:both 란 앞에서 나왔던 엘리먼트들이 float 속성을 띄고 있다라면 이제부터는 float 속성을 해제하겠다는 뜻이다.
+     */
+</style>
+
+</head>
+<body>
+
+<div class="wraper">
+   <div class="navigation">
+      <ul>
+          Navigation
+	 	  <p>
+          <li>JAVA</li>
+          <li>Oracle</li>
+          <li>HTML5</li>
+          <li>JSP</li>
+          <li>Spring</li>
+      </ul>
+   </div>
+   <div class="content">
+        Content
+	    <p>
+         1. 최근 최대의 이슈로 부상한 사물인터넷 시대에는 클라우드와 넘치는 데이터의 효용가치를 극대화 시켜주는 빅데이터의 연결에 주목하고 있다. 2. 이러한 트랜드를 반영한 본 과정을 통해 기존의 자바개발자로서의 역할을 한층 더 업그레이드 하고 실무중심의 교육을 통해 양성된 전문인력이 기업의 각 분야에 배치되어 프로젝트를 원할히 수행함으로써 경쟁력있는 현장 실무형 인력을 양성하고자 합니다.<br>
+	     1. 최근 최대의 이슈로 부상한 사물인터넷 시대에는 클라우드와 넘치는 데이터의 효용가치를 극대화 시켜주는 빅데이터의 연결에 주목하고 있다. 2. 이러한 트랜드를 반영한 본 과정을 통해 기존의 자바개발자로서의 역할을 한층 더 업그레이드 하고 실무중심의 교육을 통해 양성된 전문인력이 기업의 각 분야에 배치되어 프로젝트를 원할히 수행함으로써 경쟁력있는 현장 실무형 인력을 양성하고자 합니다.<br>
+	     1. 최근 최대의 이슈로 부상한 사물인터넷 시대에는 클라우드와 넘치는 데이터의 효용가치를 극대화 시켜주는 빅데이터의 연결에 주목하고 있다. 2. 이러한 트랜드를 반영한 본 과정을 통해 기존의 자바개발자로서의 역할을 한층 더 업그레이드 하고 실무중심의 교육을 통해 양성된 전문인력이 기업의 각 분야에 배치되어 프로젝트를 원할히 수행함으로써 경쟁력있는 현장 실무형 인력을 양성하고자 합니다.<br>
+	     1. 최근 최대의 이슈로 부상한 사물인터넷 시대에는 클라우드와 넘치는 데이터의 효용가치를 극대화 시켜주는 빅데이터의 연결에 주목하고 있다. 2. 이러한 트랜드를 반영한 본 과정을 통해 기존의 자바개발자로서의 역할을 한층 더 업그레이드 하고 실무중심의 교육을 통해 양성된 전문인력이 기업의 각 분야에 배치되어 프로젝트를 원할히 수행함으로써 경쟁력있는 현장 실무형 인력을 양성하고자 합니다.
+   </div>
+   <div class="footer">
+       Footer
+   </div>
+</div>
+
+</body>
+</html>
